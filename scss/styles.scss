@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+
+//Colors:
+/*---------
+rgb(255,255,255)
+rgb(0,0,0)
+rgba(0,0,0,0.5)
+rgba(0,0,0,0.24)
+rgb(22, 34, 42)
+rgb(58, 96, 115)
+
+
+//Fonts:
+Bitter
+FontAwesome
+----------*/
+
+
+$max-width: 80em;
+$h-height: 140px;
+$item-width: 130px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+.header{
+  height: $h-height;
+  line-height: $h-height;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(22, 34, 42);
+  color: rgb(255,255,255);
+}
+
+
+#selections{
+  text-align: center;
+  padding-top: 10px;
+}
+
+#vue{
+  position: relative;
+  left: 28%;
+  height: 100%;
+  width: 50%;
+}
+
+#item{
+  display: inline-block;
+  width: $item-width;
+  margin: 20px;
+  
+  img{
+    width: $item-width;
+    height: 100px;
+    background-size: cover;
+  }
+  #name{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 14px;
+  }
+  #description{
+    text-align: center;
+    padding: 3px;
+    font-style: italic;
+    font-size: 10px;
+  }
+  button{
+    padding:5px;
+    position:relative;
+    left: 20%;
+  }
+}
